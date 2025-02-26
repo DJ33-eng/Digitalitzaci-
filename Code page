@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informació sobre Google</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background-color: #f4f4f4;
+        }
+    header {
+        background-color: #4285F4
+        color: white;
+        padding: 15px;
+        font-size: 24px;
+          }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        background: white;
+        padding: 20px
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba (0, 0, 0, 0.1);
+        ]
+      button {
+        background-color:  #34A853;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+        }
+        button:hover {
+            background-color: #2c8c45;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Informació sobre Google
+    </header>
+    <div class="container">
+        <h2>¿Què és Google?</h2>
+        <p>Google és una empresa tecnològica que ofereix serveis i productes d'Internet, com el seu famós buscador, Gmail, Google Drive i més.</p>
+        <p id="dato"></p>
+    </div>
+    <script>
+        function mostrarDato() {
+            const datos = [
+                "Google va ser creat l'any 1998 per Larry Page i Sergey Brin.",
+                "El nom de 'Google' prové del terme 'googol', que representa un 1 seguit de 100 zeros",
+                "El primer doodle de Google va ser un dibuix de Burning Man en 1998.",
+                "El lema original de Google era 'Don't be evil'."
+              ];
+
+              let randomIndex = Math.floor(Math.random() * datos.length);
+              document.getElementByID("dato").innerText = datos[randomIndex];
+        }
+    </script>
+'body>
+'html>
